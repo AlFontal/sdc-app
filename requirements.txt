@@ -1,38 +1,6 @@
-Brotli @ file:///home/afontal/.cache/pypoetry/artifacts/45/7f/49/78d9ee720d53fc134160d1ad19bf7b213d28b4c08a783fc93da586a960/Brotli-1.0.9-cp38-cp38-manylinux1_x86_64.whl
-click @ file:///home/afontal/.cache/pypoetry/artifacts/e5/58/8a/d84fb75fd9855ec843f116601e7167ac4978327b724094fd000f2736e0/click-8.0.1-py3-none-any.whl
-cycler @ file:///home/afontal/.cache/pypoetry/artifacts/d7/14/aa/ff6e41cb4937cf2f4250bf871903aa12ae9d22e21f859aece73c8808e3/cycler-0.10.0-py2.py3-none-any.whl
-dash @ file:///home/afontal/.cache/pypoetry/artifacts/df/bc/4f/70c592c0e81038b79d0ac522bf572eaab778944e8991c8b2d98971c9fc/dash-1.20.0.tar.gz
-dash-bootstrap-components @ file:///home/afontal/.cache/pypoetry/artifacts/91/b8/27/6510599d2e5e813780214bf28e36058bbc961d3282b6e1ef80badafb0e/dash_bootstrap_components-0.12.2-py3-none-any.whl
-dash-core-components @ file:///home/afontal/.cache/pypoetry/artifacts/f7/d2/5f/d15679ba639cf55369efee76473949361b8f13dad8ecd4e3210f673c3b/dash_core_components-1.16.0.tar.gz
-dash-html-components @ file:///home/afontal/.cache/pypoetry/artifacts/eb/a3/57/1d5b463744774a8fe09530af1d473dd6feea92c88e59c04dc799a852bd/dash_html_components-1.1.3.tar.gz
-dash-renderer @ file:///home/afontal/.cache/pypoetry/artifacts/2d/dc/0f/65bf78aefcdf9de5cec6b60a575aa7594b8dfe055728b4745a4ac3b209/dash_renderer-1.9.1.tar.gz
-dash-table @ file:///home/afontal/.cache/pypoetry/artifacts/dc/6b/b2/ab5187ac1103073af2f1725ece57c311367a5e155e827c5f5399e30859/dash_table-4.11.3.tar.gz
-descartes @ file:///home/afontal/.cache/pypoetry/artifacts/55/48/93/2dfc9278d131ed2413ab628c59d287240743e57326202133caf6e06d67/descartes-1.1.0-py3-none-any.whl
-Flask @ file:///home/afontal/.cache/pypoetry/artifacts/2e/a3/f8/fd1ce322eef1a5dc755e745210f2e85d51e0bc1332f55aa0a6f0ace47f/Flask-2.0.1-py3-none-any.whl
-Flask-Compress @ file:///home/afontal/.cache/pypoetry/artifacts/f9/11/ca/f1e46ab9df5d4c5df7006d3716d7a7f315435d99ce4da874d00982c082/Flask_Compress-1.10.1-py3-none-any.whl
-future @ file:///home/afontal/.cache/pypoetry/artifacts/d9/62/dc/809bb3ddfe360ddc60ebb287ad6b0eaf71aef98937f0ea0c466d44aa19/future-0.18.2.tar.gz
-gunicorn @ file:///home/afontal/.cache/pypoetry/artifacts/eb/33/9c/43e158642e15413395d933fef80bb16fa6b50a6ed8dd157f506b6b2c03/gunicorn-20.1.0-py3-none-any.whl
-itsdangerous @ file:///home/afontal/.cache/pypoetry/artifacts/3c/f1/0c/8a71f1217bc7a47b34e2e273a3d34bbf19671b6d17202ac9787937fabf/itsdangerous-2.0.1-py3-none-any.whl
-Jinja2 @ file:///home/afontal/.cache/pypoetry/artifacts/1b/1c/64/6fcc5a7a4ffb6e923a1309d4e4d62309f637ac52cba8614c5778bc2650/Jinja2-3.0.1-py3-none-any.whl
-kiwisolver @ file:///home/afontal/.cache/pypoetry/artifacts/5b/c3/a3/a47dcabaa930d20bd685949421886fab6509f9e360b5b19f140e5f52cf/kiwisolver-1.3.1-cp38-cp38-manylinux1_x86_64.whl
-MarkupSafe @ file:///home/afontal/.cache/pypoetry/artifacts/e9/aa/ce/73da3aa2f2d872e5d1cb28a49f7e6e0e76c9e7ba290b034f442badefd2/MarkupSafe-2.0.1-cp38-cp38-manylinux2010_x86_64.whl
-matplotlib @ file:///home/afontal/.cache/pypoetry/artifacts/7e/f8/01/c53c647224e825a6489485d44a8f34dc7dc674bcf248000bd546c16c55/matplotlib-3.4.2-cp38-cp38-manylinux1_x86_64.whl
-mizani @ file:///home/afontal/.cache/pypoetry/artifacts/93/af/e1/cf685e4c92ce91282a3122ca0199b47d28c126f782fe790938f6dfb8a8/mizani-0.7.3-py3-none-any.whl
-numpy @ file:///home/afontal/.cache/pypoetry/artifacts/34/91/dc/fe619ece3a7634d6903731e5d401b3627a80ddc867acec350439c187eb/numpy-1.21.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
-palettable @ file:///home/afontal/.cache/pypoetry/artifacts/76/d6/19/9174225fc614374246a1a0d7966bf16535fd069ec9aab3c73103802094/palettable-3.3.0-py2.py3-none-any.whl
-pandas @ file:///home/afontal/.cache/pypoetry/artifacts/06/bc/92/5cfe99f84bddd2a411c468a2d1ccdb60c6c9f2c3f891bb31ae0ea6e805/pandas-1.2.5-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-patsy @ file:///home/afontal/.cache/pypoetry/artifacts/dc/86/3a/cc37c93a6634edbc585dc840bd146f0dd6c2f10044c025d739cb3f504c/patsy-0.5.1-py2.py3-none-any.whl
-Pillow @ file:///home/afontal/.cache/pypoetry/artifacts/1a/25/08/8d31b82ab0665362114a66fd786bbe5519d25ccbf2645c514720ef3a24/Pillow-8.2.0-cp38-cp38-manylinux1_x86_64.whl
-plotly @ file:///home/afontal/.cache/pypoetry/artifacts/90/b8/a1/75bf57a66a490544f3bad887a9c7693e340c213185a16f179383e71792/plotly-5.0.0-py2.py3-none-any.whl
-plotnine @ file:///home/afontal/.cache/pypoetry/artifacts/6a/8e/8e/16e3e735959adb0026da207093fced87f74d56a9d889f17d240d65642a/plotnine-0.8.0-py3-none-any.whl
-pyparsing @ file:///home/afontal/.cache/pypoetry/artifacts/da/e7/3d/1780282f558e5fd157bf708b28b8ba0d08323ef6bc5b6396139ce38a0b/pyparsing-2.4.7-py2.py3-none-any.whl
-python-dateutil @ file:///home/afontal/.cache/pypoetry/artifacts/1e/2c/dc/0e811c2299b40168ee1da03bc13c11762ce9fa96eb867ad22280db11fc/python_dateutil-2.8.1-py2.py3-none-any.whl
-pytz @ file:///home/afontal/.cache/pypoetry/artifacts/19/50/c9/f8bffb0360052b3c85b912bc4172f824bc2571e24002806fb3a428302e/pytz-2021.1-py2.py3-none-any.whl
-scipy @ file:///home/afontal/.cache/pypoetry/artifacts/5c/38/63/9194f23ecdc809e85ad7f3d3c8b25f19557f556617586461090f6039c2/scipy-1.6.1-cp38-cp38-manylinux1_x86_64.whl
-sdcpy @ file:///home/afontal/.cache/pypoetry/artifacts/76/6e/e6/a64a2c0f83dfa22d6d98ce041eadb0991f7a907927e01bdbcdf80669c2/sdcpy-0.2.2.tar.gz
-seaborn @ file:///home/afontal/.cache/pypoetry/artifacts/16/39/bd/d5b9d2e2f0db925404bef3e1a35d64fb3f50a3b523e355a971ebe30014/seaborn-0.11.1-py3-none-any.whl
-six @ file:///home/afontal/.cache/pypoetry/artifacts/48/e6/04/8118155ae3ec3a16dd2a213bbf7a7d8a62c596b2e90f73a22c896269f1/six-1.16.0-py2.py3-none-any.whl
-statsmodels @ file:///home/afontal/.cache/pypoetry/artifacts/f5/67/14/2d3cfb1cd4266852e9a7d4c48f07670df1c44b598b6d98c98fa9616711/statsmodels-0.12.2-cp38-cp38-manylinux1_x86_64.whl
-tenacity @ file:///home/afontal/.cache/pypoetry/artifacts/0a/73/0e/a7daff9b67f7779704bdff7e5d42b8dd25258b63e87a742dd04a449acf/tenacity-7.0.0-py2.py3-none-any.whl
-tqdm @ file:///home/afontal/.cache/pypoetry/artifacts/6c/33/d5/48c339dfc98e42f0a0b83bf80fea8c8af5f1b732a0ff26026986977a88/tqdm-4.61.1-py2.py3-none-any.whl
-Werkzeug @ file:///home/afontal/.cache/pypoetry/artifacts/b7/b2/9b/52784991c09ded93e3376c324031d71d8a479482b3661695ce2807a8eb/Werkzeug-2.0.1-py3-none-any.whl
+dash>=1.20.0
+dash-bootstrap-components>=0.12.2
+pandas>=1.2.5
+matplotlib>=3.4.2
+sdcpy>=0.2.2
+gunicorn>=20.1.0
