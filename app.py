@@ -9,6 +9,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import sdcpy.scale_dependent_correlation as sdc
 
+from whitenoise import WhiteNoise
 from dash.exceptions import PreventUpdate
 from dash.dependencies import Output, Input, State
 
@@ -16,7 +17,13 @@ app = dash.Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
     suppress_callback_exceptions=True
 )
-GITHUB_LOGO = 'assets/github_logo_white.png'
+
+app.title = 'SDCpy app'
+server = app.server
+server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/')
+
+GITHUB_LOGO = 'static/github_logo_white.png'
+SDCPY_LOGO = 'static/sdcpy_logo_white.png'
 SIDEBAR_STYLE = {
     'position': 'fixed',
     'top': 0,
@@ -31,7 +38,7 @@ sidebar = html.Div(
     [
         html.A(
             dbc.Row(
-                [html.Img(src='assets/sdcpy_logo_white.png', height='140px',
+                [html.Img(src=SDCPY_LOGO, height='140px',
                           style={'margin-left': '15px'})],
                 align='center',
                 no_gutters=False,
@@ -228,8 +235,6 @@ app.layout = html.Div(children=[sidebar,
                                 clicks_store,
                                 results_store])
 
-app.title = 'SDCpy app'
-server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=True)
