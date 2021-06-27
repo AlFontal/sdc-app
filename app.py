@@ -54,7 +54,7 @@ sidebar = html.Div(
                 align='center',
                 no_gutters=False,
             ),
-            href='https://github.com/AlFontal/sdc-app',
+            href='https://github.com/AlFontal/sdcpy-app',
         ),
     ], style=SIDEBAR_STYLE,
 )
