@@ -229,5 +229,7 @@ app.layout = html.Div(children=[sidebar,
                                 results_store])
 
 app.title = 'SDCpy app'
+server = app.server
+
 if __name__ == '__main__':
     app.run_server(debug=True)
