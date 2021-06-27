@@ -22,8 +22,8 @@ app.title = 'SDCpy app'
 server = app.server
 server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/')
 
-GITHUB_LOGO = 'static/github_logo_white.png'
-SDCPY_LOGO = 'static/sdcpy_logo_white.png'
+GITHUB_LOGO = 'github_logo_white.png'
+SDCPY_LOGO = 'sdcpy_logo_white.png'
 SIDEBAR_STYLE = {
     'position': 'fixed',
     'top': 0,
