@@ -74,7 +74,7 @@ ts1_dropdown = dcc.Dropdown(options=[{'label': 'Add dataset to select', 'value':
 ts2_dropdown = dcc.Dropdown(options=[{'label': 'Add dataset to select', 'value': 'Empty'}],
                             placeholder='Select time series 2', id='ts2-dropdown')
 date_dropdown = dcc.Dropdown(options=[{'label': 'Add dataset to select', 'value': 'Empty'}],
-                             placeholder='Select time series 2', id='date-dropdown')
+                             placeholder='Select date column', id='date-dropdown')
 method_dropdown = dcc.Dropdown(options=[{'label': 'Spearman', 'value': 'spearman'},
                                         {'label': 'Pearson', 'value': 'pearson'}],
                                placeholder='Select correlation method', id='method-dropdown')
