@@ -119,7 +119,7 @@ file_upload = html.Div([
     ),
     html.Div(id='output-data-upload'),
 ])
-
+progress_div = html.Div(id='progress-div')
 results_div = html.Div(id='results-div')
 
 run_button = html.Div(dbc.Button('Run SDC Analysis',
@@ -171,22 +171,33 @@ def update_series(data):
         raise PreventUpdate
 
 
-@app.callback([Output('results-div', 'children'),
-               Output('clicks-store', 'data'),
-               ],
-              Input('run-button', 'n_clicks'),
-              Input('clicks-store', 'data'),
-              Input('ts1-dropdown', 'value'),
-              Input('ts2-dropdown', 'value'),
-              Input('date-dropdown', 'value'),
-              Input('method-dropdown', 'value'),
-              Input('min-lag', 'value'),
-              Input('max-lag', 'value'),
-              Input('window', 'value'),
-              Input('data-memory-store', 'data')
-              )
-def on_run_sdc_click(n_clicks, current_clicks, ts1, ts2, date, method, min_lag, max_lag, w, data):
+@app.callback([Output('progress-div', 'children'),
+               Output('clicks-store', 'data')],
+               Input('run-button', 'n_clicks'),
+               Input('clicks-store', 'data'),
+               )
+def on_run_sdc_click_progress(n_clicks, current_clicks):
     if n_clicks is not None and n_clicks > current_clicks:
+        return [dcc.Markdown('Computing SDC'), dbc.Spinner()], n_clicks
+
+    else:
+        raise PreventUpdate
+
+
+@app.callback([Output('results-div', 'children'),
+               Output('progress-div', 'hidden')],
+              Input('progress-div', 'children'),
+              State('ts1-dropdown', 'value'),
+              State('ts2-dropdown', 'value'),
+              State('date-dropdown', 'value'),
+              State('method-dropdown', 'value'),
+              State('min-lag', 'value'),
+              State('max-lag', 'value'),
+              State('window', 'value'),
+              State('data-memory-store', 'data')
+              )
+def on_run_sdc_click(trigger, ts1, ts2, date, method, min_lag, max_lag, w, data):
+    if trigger is not None:
         df = pd.DataFrame(data).assign(date=lambda dd: pd.to_datetime(dd[date])).set_index('date')
         computed_sdc = sdc.SDCAnalysis(ts1=df[ts1], ts2=df[ts2], method=method,
                                        min_lag=min_lag, max_lag=max_lag, fragment_size=w)
@@ -201,7 +212,8 @@ def on_run_sdc_click(n_clicks, current_clicks, ts1, ts2, date, method, min_lag, 
         dbc.Button("Download Results Table", id="download-button"),
         dcc.Download(id="download-results-xlsx")
                 ])
-        return [dcc.Markdown('### SDC Analysis Results'), download_button, image_div], n_clicks
+        return [dcc.Markdown('### SDC Analysis Results'), download_button, image_div], True
+
     else:
         raise PreventUpdate
 
@@ -213,7 +225,7 @@ def on_run_sdc_click(n_clicks, current_clicks, ts1, ts2, date, method, min_lag, 
     prevent_initial_call=True,
 )
 def on_download_click(n_clicks, data):
-    if n_clicks > 0:
+    if n_clicks is not None and n_clicks > 0:
         return dict(content=data, filename='test.xslx')
 
 
@@ -225,6 +237,7 @@ content_div = html.Div([title_row,
                         html.Br(),
                         run_button,
                         html.Hr(),
+                        progress_div,
                         results_div],
                        style={'margin-left': '10rem', 'margin-right': '2rem',
                               'padding': '2rem 1rem'})
