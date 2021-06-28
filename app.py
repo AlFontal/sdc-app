@@ -105,7 +105,7 @@ file_upload = html.Div([
             'Upload dataset (.csv)',
             html.A('')
         ]),
-        style={**{
+        style={
             'width': '500px',
             'height': '60px',
             'lineHeight': '60px',
@@ -115,7 +115,7 @@ file_upload = html.Div([
             'textAlign': 'center',
             'margin': '10px',
             'margin-left': '2 rem'
-        }}
+        }
     ),
     html.Div(id='output-data-upload'),
 ])
