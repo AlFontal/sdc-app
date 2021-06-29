@@ -63,6 +63,17 @@ data_memory_store = dcc.Store(id='data-memory-store')
 clicks_store = dcc.Store(id='clicks-store', data=0)
 results_store = dcc.Store(id='results-store', data=None)
 
+# To make sure our site does not reach Heroku's 30s time-out, update hidden div every 15s
+interval = dcc.Interval(id='interval', interval=15 * 1000)
+hidden_div = html.Div(id='hidden-div')
+
+
+@app.callback(Output('hidden-div', 'children'),
+              Input('interval', 'n_intervals'))
+def interval_update(n):
+    return(html.P(str(n)))
+
+
 title_row = dcc.Markdown('## Scale dependent correlation Analysis WebApp')
 
 instructions_row = dcc.Markdown('Start by uploading a `.csv` file containing at the very least a'
@@ -246,8 +257,10 @@ app.layout = html.Div(children=[sidebar,
                                 content_div,
                                 data_memory_store,
                                 clicks_store,
-                                results_store])
+                                results_store,
+                                interval,
+                                hidden_div])
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
